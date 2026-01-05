@@ -319,7 +319,7 @@ function JD() {
                     <th className="text-left py-4 px-6 text-sm font-semibold text-gray-700">Company</th>
                     <th className="text-left py-4 px-6 text-sm font-semibold text-gray-700">Job Title</th>
                     <th className="text-left py-4 px-6 text-sm font-semibold text-gray-700">Created On</th>
-                    <th className="text-left py-4 px-6 text-sm font-semibold text-gray-700">Skills</th>
+                    {/* <th className="text-left py-4 px-6 text-sm font-semibold text-gray-700">Skills</th> */}
                     <th className="text-left py-4 px-6 text-sm font-semibold text-gray-700">Filtered</th>
                     <th className="text-left py-4 px-6 text-sm font-semibold text-gray-700">Unfiltered</th>
                     <th className="text-left py-4 px-6 text-sm font-semibold text-gray-700">Action</th>
@@ -335,14 +335,14 @@ function JD() {
                         <td className="py-4 px-6 text-sm text-gray-700">{row.companyName || row.offerId?.company || 'N/A'}</td>
                         <td className="py-4 px-6 text-sm text-gray-700">{row.offerId?.jobTitle || 'N/A'}</td>
                         <td className="py-4 px-6 text-sm text-gray-700">{formatDate(row.createdAt)}</td>
-                        <td className="py-4 px-6">
+                        {/* <td className="py-4 px-6">
                           <button
                             className="bg-blue-100 hover:bg-blue-200 text-blue-700 px-4 py-1.5 rounded-2xl text-sm font-medium transition-colors"
                             title={row.offerId?.skills?.join(', ') || 'No skills'}
                           >
                             View
                           </button>
-                        </td>
+                        </td> */}
                         <td className="py-4 px-6 text-sm text-blue-600 font-medium">{row.filteredCandidates?.length || 0}</td>
                         <td className="py-4 px-6 text-sm text-blue-600 font-medium">{row.unfilteredCandidates?.length || 0}</td>
                         <td className="py-4 px-6">
@@ -354,7 +354,7 @@ function JD() {
                             >
                               <Eye className="w-4 h-4 text-blue-600" />
                             </button>
-                            <button
+                            {/* <button
                               onClick={() => handleDeleteJD(row._id)}
                               className="p-1 border border-red-500 rounded-lg transition-colors"
                               aria-label="Delete"
@@ -362,7 +362,7 @@ function JD() {
                               <svg className="w-4 h-4 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                               </svg>
-                            </button>
+                            </button> */}
                           </div>
                         </td>
 
