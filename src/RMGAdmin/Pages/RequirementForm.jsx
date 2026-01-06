@@ -102,7 +102,7 @@ function RequirementForm() {
 
       console.log('Submitting data:', submitData);
 
-      const response = await axios.post(`${baseUrl}/api/offer/`, submitData, {
+      const response = await axios.post(`${baseUrl}/api/offer`, submitData, {
         headers: {
           Authorization: `Bearer ${token}`,
           'Content-Type': 'application/json'
