@@ -1,7 +1,7 @@
 // File: RecruiterAdmin/api/reviewApi.js
 // API integration for test review and finalization
 
-const API_BASE_URL = 'http://localhost:5000/api/v1';
+const API_BASE_URL = 'https://python-k0xt.onrender.com/api/v1';
 
 class ReviewAPI {
     /**
