@@ -235,7 +235,7 @@ const LandingPage = () => {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-2">
               <span className="text-2xl font-bold text-[#6D28D9]">
-                AiRecruit
+                Recruter AI
               </span>
             </div>
 
@@ -694,7 +694,7 @@ const LandingPage = () => {
             {/* Company Info */}
             <div>
               <div className="flex items-center space-x-2 mb-6">
-                <span className="text-3xl font-bold">AiRecruit</span>
+                <span className="text-3xl font-bold">Recruter AI</span>
               </div>
               <p className="mb-6 leading-relaxed">
                 Smarter hiring with AI-powered interviews
@@ -755,7 +755,7 @@ const LandingPage = () => {
           {/* Bottom Bar */}
           <div className="border-t border-purple-700 mt-12 pt-6 text-center">
             <p className="">
-              © 2026 RecruitAI. All rights reserved
+              © 2026 Recruter AI. All rights reserved
             </p>
           </div>
         </div>
